@@ -9,14 +9,12 @@ class Forma implements FormaInterface// seria  la clase pare y usa el contrato
 
     public $amplada; // tambe es poden posar en protected, private
     public $alçada;
-    public $texte;
 
 
-    public function __construct($amplada, $alçada, $texte)
+    public function __construct($amplada, $alçada)
     {
         $this->amplada = $amplada;
         $this->alçada = $alçada;
-        $this->texte=$texte;
 
     }
 
@@ -32,7 +30,6 @@ class Rectangle extends Forma  // la clase fill hereda (area), obligado a usar e
         echo '<br/>';
         echo 'Amb una base de '.$this->amplada.' y una alçada de '.$this->alçada;
         echo '<br/>';
-        echo $this->texte.'<br/>';
 
         return $this->amplada * $this-> alçada;
     }
@@ -50,11 +47,11 @@ class Triangle extends Forma // clase fill que hereda area()
 }
 
 
-$rectangle= new Rectangle(2,2,'');
+$rectangle= new Rectangle(2,2);
 echo '<br/>';
 echo 'El area del rectangle es de '.$rectangle->area();
 
 
-$triangle= new Triangle(5,4,''); // amplada , alçada i missatge
+$triangle= new Triangle(5,4); // amplada , alçada
 echo '<br/>';
 echo 'El area del triangle es de '.$triangle->area();
