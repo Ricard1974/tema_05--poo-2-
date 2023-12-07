@@ -2,7 +2,8 @@
 
 require_once('Forma.php');
 
-class Rectangle // la clase fill hereda (area), obligado a usar el contrato heredado de Forma
+
+class Rectangle extends Forma  // la clase fill hereda (area), obligado a usar el contrato heredado de Forma
 {
     public function area(){
         echo '<br/>';

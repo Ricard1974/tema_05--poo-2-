@@ -2,8 +2,7 @@
 <?php
 
 require('FormaInterface.php');
-
-class Forma extends FormaInterface// seria  la clase pare y usa el contrato
+class Forma implements FormaInterface// seria  la clase pare y usa el contrato
 {
 
     public $amplada; // tambe es poden posar en protected, private
@@ -18,7 +17,9 @@ class Forma extends FormaInterface// seria  la clase pare y usa el contrato
     }
 
     public function area()
-    {}
+    {
+        // return  0; // retorna res ja que calcularem el area de cada forma en la extensio de clase
+    }
 }
 
 ?>
