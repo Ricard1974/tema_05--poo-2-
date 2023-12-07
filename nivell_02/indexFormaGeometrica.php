@@ -1,5 +1,7 @@
 <?php
-require_once('FormaGeometrica.php');
+
+require_once('Classes/Rectangle.php');
+require_once('Classes/Triangle.php');
 
 $rectangle = new Rectangle(10,5);
 $triangle= new Triangle(3,5);
